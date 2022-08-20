@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: antiquewhite;
+}
+.slider-container {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+img {
+  width: 500px;
+  height: 500px;
+}
+
+.image-container {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+h1 {
+  display: inline-block;
+  position: absolute;
+  top: 35%;
+  opacity: 0.5;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+h1:hover {
+  opacity: 1;
+}
+
+#icon-prev {
+  left: 8px;
+}
+#icon-next {
+  right: 8px;
+}
